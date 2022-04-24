@@ -85,6 +85,7 @@ while True:
     #process image
     img = np.asarray(imgOriginal)
     img = cv2.resize(img, (32, 32))
+
     img = preprocessing(img)
     cv2.imshow("processed img", img)
     img = img.reshape(1, 32, 32, 1)
